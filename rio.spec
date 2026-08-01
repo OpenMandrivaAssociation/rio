@@ -2,7 +2,7 @@
 %define appid com.rioterm.Rio
 
 Name:           rio
-Version:        0.5.2
+Version:        0.5.3
 Release:        1
 Summary:        Hardware accelerated terminal emulator
 License:        MIT and Apache-2.0 and BSD
@@ -16,11 +16,14 @@ BuildRequires:  cmake
 BuildRequires:  desktop-file-utils
 BuildRequires:  glslc
 BuildRequires:  pkgconfig(alsa)
+BuildRequires:	pkgconfig(expat)
 BuildRequires:  pkgconfig(fontconfig)
 BuildRequires:  pkgconfig(freetype2)
 BuildRequires:  pkgconfig(xcb)
 BuildRequires:  pkgconfig(xkbcommon)
 BuildRequires:	rust-packaging
+# (angry p) needed in case of Nvidia on Wayland and usage OpenGL as the main backend.
+BuildRequires:	egl-devel
 
 Requires:       fontconfig
 Requires:       hicolor-icon-theme
