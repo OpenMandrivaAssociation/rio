@@ -2,7 +2,7 @@
 %define appid com.rioterm.Rio
 
 Name:           rio
-Version:        0.5.16
+Version:        0.5.19
 Release:        1
 Summary:        Hardware accelerated terminal emulator
 License:        MIT and Apache-2.0 and BSD
