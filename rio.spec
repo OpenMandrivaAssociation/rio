@@ -54,6 +54,8 @@ sed -i 's|Exec=.*|Exec=rio|g' misc/rio.desktop
 
 %install
 #cargo_install
+cargo run -p transtools -- packfiles
+
 install -Dm755 target/rpm/%{name} \
     %{buildroot}%{_bindir}/%{crate}
 
